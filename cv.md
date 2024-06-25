@@ -68,7 +68,7 @@ test.describe('Password Reset Test Suite', () => {
 
 ### Spark Networks GmbH Berlin, Germany
 
-#### QA ENGiNEER (PAYMENTS, TRUST AND SAFETY) Jul 2022 ‑ Dec 2023
+#### QA ENGINEER (PAYMENTS, TRUST AND SAFETY) Jul 2022 ‑ Dec 2023
 
 * Testing subscriptions on web, Android, and iOS platforms
 * Testing payments made through Credit Card, PayPal, and the Google and Apple stores
@@ -78,7 +78,7 @@ test.describe('Password Reset Test Suite', () => {
 
 ### SberMarket Moscow, Russia
 
-#### QA ENGiNEER / QA LEAD (ORDERS AND DiSPATCHiNG) May 2021 ‑ Jun 2022
+#### QA ENGINEER / QA LEAD (ORDERS AND DiSPATCHiNG) May 2021 ‑ Jun 2022
 
 * Manual API testing, UI testing, mobile testing (Android only)
 * Improving testing processes within the teams
@@ -88,7 +88,7 @@ test.describe('Password Reset Test Suite', () => {
 
 ### VTB Moscow, Russia
 
-#### QA ENGiNEER (B2B TRANSACTiONS) Nov 2020 ‑ Apr 2021
+#### QA ENGINEER (B2B TRANSACTiONS) Nov 2020 ‑ Apr 2021
 
 * Testing the application’s API to ensure smooth and secure transactions
 * Verifying the usability and functionality of the application’s user interface
@@ -97,7 +97,7 @@ test.describe('Password Reset Test Suite', () => {
 
 ### Mercury Development Samara, Russia
 
-#### QA ENGiNEER / QA LEAD Jun 2016 ‑ Nov 2020
+#### QA ENGINEER / QA LEAD Jun 2016 ‑ Nov 2020
 
 * Ensuring the functionality and performance of the web‑based services and mobile apps
 * Verifying the usability and functionality of the user interface for all platforms
