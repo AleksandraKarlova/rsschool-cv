@@ -1,38 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-  <title>Aleksandra Karlova - CV</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Work Experience</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Aleksandra Karlova - CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code Example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#languages" class="nav-link">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="main">
-    <div class="container">
-    </div>
-  </main>
+    <main class="main">
+      <div class="container">
+        <section class="section profile two-columns-container" id="profile">
+          <div class="half-section">
+            <h1 class="section-title">Aleksandra Karlova</h1>
+            <p class="section-subtitle">Senior QA Engineer</p>
+          </div>
+          <img
+            class="picture"
+            src="./assets/picture.jpg"
+            alt="Profile picture"
+          />
+        </section>
+        <div class="two-columns-container">
+          <section class="section half-section" id="about">
+            <h2 class="section-title">About</h2>
+            <p>QA Engineer with more than 7 years of manual web and mobile testing experience in Fitness, Healthcare, E‑commerce and other areas, able to
+              lead testing process in distributed product teams.</p> 
+            <p>I prioritize ongoing learning and growth, demonstrating a commitment to personal and professional development.</p>
+            <p>At work I actively contribute to streamlining testing processes to enhance the efficiency of the testing team.</p>
+          </section>
+          <section class="section half-section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul>
+              <li>
+                E-mail: <a href="mailto:aleksandra.karlova10@gmail.com">aleksandra.karlova10@gmail.com</a>
+              </li>
+              <li>
+                GitHub: <a href="https://github.com/AleksandraKarlova">@AleksandraKarlova</a>
+              </li>
+              <li>
+                Linkedin: <a href="https://www.linkedin.com/in/aleksandrakarlova/">@AleksandraKarlova</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code sample</h2>
+          <pre>
+            <code>
+            test.describe('Password Reset Test Suite', () => {
 
-  <footer class="footer">
-    <div class="container">
-    </div>
-  </footer>
-</body>
+              test.beforeEach(async ({ page }) => {
+                await page.goto('https://www.douglas.de/login');
+                await page.getByRole('button', { name: 'Nur Unbedingt Erforderlich' }).click();
+                await page.getByText('Passwort vergessen?').click();
+              });
+              
+              test('Reset password with valid e-mail', async ({ page }) => {
+            
+                // Enter existing e-mail to reset password
+                await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).click();
+                await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).fill(testData.validUser.email);
+                await expect(page.locator('#forgotPasswordForm').getByRole('img')).toBeVisible();
+            
+                // Click on Send E-mail button
+                await page.getByRole('button', { name: 'E-Mail absenden' }).click();
+            
+                // Expect 'E-mail sent' dialog to be opened
+                await expect(page.getByRole('heading', { name: 'E-Mail verschickt' })).toBeVisible();
+            
+                // Close the dialog
+                await page.getByRole('button', { name: 'Schliessen' }).click();
+              });
+            });
+          </code>
+          </pre>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+        </section>
+        <div class="two-columns-container">
+          <section class="section half-section" id="education">
+            <h2 class="section-title">Education</h2>
+          </section>
+          <section class="section half-section" id="languages">
+            <h2 class="section-title">Languages</h2>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
