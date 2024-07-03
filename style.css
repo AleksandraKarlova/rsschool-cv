@@ -133,6 +133,19 @@ h1.section-title {
   list-style: none;
 }
 
+.contact-list-item {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+
+  vertical-align: sub;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
