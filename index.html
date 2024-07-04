@@ -1,11 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet">
+    <title>Aleksandra Karlova - CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code Example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#languages" class="nav-link">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="section profile two-columns-container" id="profile">
+          <div class="half-section">
+            <h1 class="section-title">Aleksandra Karlova</h1>
+            <p class="section-subtitle">Senior QA Engineer</p>
+          </div>
+          <img
+            class="picture"
+            src="./assets/picture.jpg"
+            alt="Profile picture">
+        </section>
+        <div class="two-columns-container">
+          <section class="section half-section" id="about">
+            <h2 class="section-title">About</h2>
+            <p>
+              QA Engineer with more than 7 years of manual web and mobile
+              testing experience in Fitness, Healthcare, E‑commerce and other
+              areas, able to lead testing process in distributed product teams.
+            </p>
+            <p>
+              I prioritize ongoing learning and growth, demonstrating a
+              commitment to personal and professional development.
+            </p>
+            <p>
+              At work I actively contribute to streamlining testing processes to
+              enhance the efficiency of the testing team.
+            </p>
+          </section>
+          <section class="section half-section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <img class="contact-icon" src="./assets/email.svg" alt="email icon">
+                <b>E-mail:</b>
+                <a href="mailto:aleksandra.karlova10@gmail.com">aleksandra.karlova10@gmail.com</a>
+              </li>
+              <li class="contact-list-item">
+                <img class="contact-icon" src="./assets/github.svg" alt="github icon">
+                <b>GitHub:</b>
+                <a href="https://github.com/AleksandraKarlova">@AleksandraKarlova</a>
+              </li>
+              <li class="contact-list-item">
+                <img class="contact-icon" src="./assets/linkedin.svg" alt="linkedin icon">
+                <b>Linkedin:</b>
+                <a href="https://www.linkedin.com/in/aleksandrakarlova/">@AleksandraKarlova</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="two-columns-container">
+          <section class="section half-section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-container">
+              <li class="skill">
+                <p class="skill-label">Java</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">JavaScript</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Python</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills-container">
+              <li class="skill">
+                <p class="skill-label">SQL</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Postman</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Charles Proxy</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills-container">
+              <li class="skill">
+                <p class="skill-label">Test Rail</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Bug Management</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Team Management</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="section half-section" id="code">
+            <h2 class="section-title">Code sample</h2>
+            <pre>
+              <code>
+  test.describe('Password Reset Test Suite', () =&gt; {
+
+    test.beforeEach(async ({ page }) =&gt; {
+      await page.goto('https://www.douglas.de/login');
+      await page.getByRole('button', { name: 'Nur Unbedingt Erforderlich' }).click();
+      await page.getByText('Passwort vergessen?').click();
+    });
+    test('Reset password with valid e-mail', async ({ page }) =&gt; {
+      // Enter existing e-mail to reset password
+      await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).click();
+      await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).fill(validUser.email);
+      await expect(page.locator('#forgotPasswordForm').getByRole('img')).toBeVisible();
+
+      // Click on Send E-mail button
+      await page.getByRole('button', { name: 'E-Mail absenden' }).click();
+
+      // Expect 'E-mail sent' dialog to be opened
+      await expect(page.getByRole('heading', { name: 'E-Mail verschickt' })).toBeVisible();
+
+      // Close the dialog
+      await page.getByRole('button', { name: 'Schliessen' }).click();
+    });
+  });
+            </code>
+            </pre>
+          </section>
+        </div>
+        <section class="section" id="experience">
+          <h2 class="section-title">Work Experience</h2>
+          <details>
+            <summary class="experience-title">
+              <h3>
+                <span>QA Engineer in Spark Networks GmbH Berlin, Germany</span>
+                <span>Jul 2022 ‑ Dec 2023</span>
+              </h3>
+            </summary>
+            <ul class="experience-content">
+              <li>Testing subscriptions on web, Android, and iOS platforms</li>
+              <li>Testing payments made through Credit Card, PayPal, and the Google and Apple stores</li>
+              <li>Testing mechanisms designed to prevent fraud on the app</li>
+              <li>Analyzing fraudsters’ behavior patterns to identify new trends and prevent fraudulent attempts</li>
+              <li>Improving testing approaches to enhance efficiency and accuracy</li>
+            </ul>
+          </details>
+          <details>
+            <summary class="experience-title">
+              <h3>
+                <span>Engineer / QA Lead in Sbermarket Moscow, Russia</span>
+                <span>May 2021 ‑ Jun 2022</span>
+              </h3>
+            </summary>
+            <ul class="experience-content">
+              <li>Manual API testing, UI testing, mobile testing (Android only)</li>
+              <li>Improving testing processes within the teams</li>
+              <li>Developing a testing strategy for the domain</li>
+              <li>Mentoring and training new team members</li>
+              <li>Recruiting and hiring new employees</li>
+            </ul>
+          </details>
+          <details>
+            <summary class="experience-title">
+              <h3>
+                <span>QA Engineer in VTB Moscow, Russia</span>
+                <span>Nov 2020 ‑ Apr 2021</span>
+              </h3>
+            </summary>
+            <ul class="experience-content">
+              <li>Testing the application’s API to ensure smooth and secure transactions</li>
+              <li>Verifying the usability and functionality of the application’s user interface</li>
+              <li>Developing and maintaining test cases and test suites to document the testing process</li>
+              <li>Running automated tests written by another QA and analyzing the results to identify and fix any issues</li>
+            </ul>
+          </details>
+          <details>
+            <summary class="experience-title">
+              <h3>
+                <span>Engineer / QA Lead in Mercury Development Samara, Russia</span>
+                <span>Jun 2016 ‑ Nov 2020</span>
+              </h3>
+            </summary>
+            <ul class="experience-content">
+              <li>Ensuring the functionality and performance of the web‑based services and mobile apps</li>
+              <li>Verifying the usability and functionality of the user interface for all platforms</li>
+              <li>Testing on iOS and Android platforms</li>
+              <li>Developing and maintaining test plans and checklists to document the testing process</li>
+              <li>Leading and mentoring a team of 2‑5 QA engineers</li>
+              <li>Providing guidance and training to junior QA engineers</li>
+              <li>Continuously working to improve testing processes and increase efficiency within the teams</li>
+            </ul>
+          </details>
+        </section>
+        <div class="two-columns-container">
+          <section class="section half-section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="two-columns-container">
+              <div class="edu-icon">
+                <img src="./assets/education.svg" alt="education icon">
+              </div>
+              <div>
+                <h3>Samara State University of Architecture and Civil Engineering</h3>
+                <p>Samara, Russia</p>
+                <p>Sep 2007 ‑ Jun 2012</p>
+                <p>M.A. in Heat and Gas Supply and Ventilation</p>
+              </div>
+            </div>
+          </section>
+          <section class="section half-section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <ul class="skills-container">
+              <li class="skill">
+                <p class="skill-label">German</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point"></span>
+                  <span class="skill-bar-point"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">English</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                </div>
+              </li>
+              <li class="skill">
+                <p class="skill-label">Russian</p>
+                <div class="skill-bar">
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                  <span class="skill-bar-point skill-bar-point-filled"></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div  class="footer-container">
+          <span>&copy; 2024</span>
+          <a href="https://github.com/AleksandraKarlova"><img class="contact-icon" src="./assets/github.svg" alt="github icon"> AleksandraKarlova</a>
+          <a class="rs-link" href="https://rs.school/courses/javascript-ru"><img width="50" src="./assets/rslogo.svg" alt="RSSchool logo"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
