@@ -97,84 +97,84 @@
         <div class="two-columns-container">
           <section class="section half-section" id="skills">
             <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-              <div class="skill">
+            <ul class="skills-container">
+              <li class="skill">
                 <p class="skill-label">Java</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">JavaScript</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Python</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-            </div>
-            <div class="skills-container">
-              <div class="skill">
+              </li>
+            </ul>
+            <ul class="skills-container">
+              <li class="skill">
                 <p class="skill-label">SQL</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Postman</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Charles Proxy</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-            </div>
-            <div class="skills-container">
-              <div class="skill">
+              </li>
+            </ul>
+            <ul class="skills-container">
+              <li class="skill">
                 <p class="skill-label">Test Rail</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Bug Management</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Team Management</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
           <section class="section half-section" id="code">
             <h2 class="section-title">Code sample</h2>
@@ -190,7 +190,7 @@
     test('Reset password with valid e-mail', async ({ page }) =&gt; {
       // Enter existing e-mail to reset password
       await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).click();
-      await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).fill(testData.validUser.email);
+      await page.getByRole('textbox', { name: 'E-Mail-Adresse*' }).fill(validUser.email);
       await expect(page.locator('#forgotPasswordForm').getByRole('img')).toBeVisible();
 
       // Click on Send E-mail button
@@ -210,7 +210,12 @@
         <section class="section" id="experience">
           <h2 class="section-title">Work Experience</h2>
           <details>
-            <summary class="experience-title">QA Engineer in Spark Networks GmbH Berlin, Germany</summary>
+            <summary class="experience-title">
+              <h3>
+                <span>QA Engineer in Spark Networks GmbH Berlin, Germany</span>
+                <span>Jul 2022 ‑ Dec 2023</span>
+              </h3>
+            </summary>
             <ul class="experience-content">
               <li>Testing subscriptions on web, Android, and iOS platforms</li>
               <li>Testing payments made through Credit Card, PayPal, and the Google and Apple stores</li>
@@ -220,7 +225,12 @@
             </ul>
           </details>
           <details>
-            <summary class="experience-title">QA Engineer / QA Lead in Sbermarket Moscow, Russia</summary>
+            <summary class="experience-title">
+              <h3>
+                <span>Engineer / QA Lead in Sbermarket Moscow, Russia</span>
+                <span>May 2021 ‑ Jun 2022</span>
+              </h3>
+            </summary>
             <ul class="experience-content">
               <li>Manual API testing, UI testing, mobile testing (Android only)</li>
               <li>Improving testing processes within the teams</li>
@@ -230,7 +240,12 @@
             </ul>
           </details>
           <details>
-            <summary class="experience-title">QA Engineer in VTB Moscow, Russia</summary>
+            <summary class="experience-title">
+              <h3>
+                <span>QA Engineer in VTB Moscow, Russia</span>
+                <span>Nov 2020 ‑ Apr 2021</span>
+              </h3>
+            </summary>
             <ul class="experience-content">
               <li>Testing the application’s API to ensure smooth and secure transactions</li>
               <li>Verifying the usability and functionality of the application’s user interface</li>
@@ -239,7 +254,12 @@
             </ul>
           </details>
           <details>
-            <summary class="experience-title">QA Engineer / QA Lead in Mercury Development Samara, Russia</summary>
+            <summary class="experience-title">
+              <h3>
+                <span>Engineer / QA Lead in Mercury Development Samara, Russia</span>
+                <span>Jun 2016 ‑ Nov 2020</span>
+              </h3>
+            </summary>
             <ul class="experience-content">
               <li>Ensuring the functionality and performance of the web‑based services and mobile apps</li>
               <li>Verifying the usability and functionality of the user interface for all platforms</li>
@@ -268,32 +288,32 @@
           </section>
           <section class="section half-section" id="languages">
             <h2 class="section-title">Languages</h2>
-            <div class="skills-container">
-              <div class="skill">
+            <ul class="skills-container">
+              <li class="skill">
                 <p class="skill-label">German</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point"></span>
                   <span class="skill-bar-point"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">English</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                 </div>
-              </div>
-              <div class="skill">
+              </li>
+              <li class="skill">
                 <p class="skill-label">Russian</p>
                 <div class="skill-bar">
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                   <span class="skill-bar-point skill-bar-point-filled"></span>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
         </div>
       </div>

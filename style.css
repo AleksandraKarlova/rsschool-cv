@@ -1,6 +1,6 @@
 :root {
-  --color-text-primary: #ffffff;
-  --color-1:#9c8666;
+  --color-primary: #ffffff;
+  --color-secondary:#9c8666;
   --color-background: #1f1f1f;
 }
 
@@ -27,12 +27,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   min-height: 100vh;
   margin: 0;
   padding: 0;
 
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   line-height: 1.75;
 
   background-color: var(--color-background);
@@ -52,7 +52,6 @@ body {
   gap: 30px;
   max-width: 1440px;
   margin: 0 auto;
-
 }
 
 .nav-list {
@@ -64,24 +63,22 @@ body {
 
 .nav-link {
   display: block;
-
   padding: 10px 20px;
   line-height: 30px;
 
-  color: var(--color-text-primary);
-
   text-decoration: none;
+
+  color: var(--color-primary);  
 }
 
 .nav-link::after {
   content: "";
 
   display: block;
-
   height: 1px;
   width: 0;
 
-  background-color: var(--color-text-primary);
+  background-color: var(--color-primary);
 
   transition: 0.3s;
 }
@@ -91,13 +88,23 @@ body {
 }
 
 .section {
-  color: var(--color-text-primary);
+  color: var(--color-primary);
+}
+
+.two-columns-container {
+  display: flex;
+  gap: 20px;
+}
+
+.half-section {
+  width: 50%;
 }
 
 .section-title {
+  margin: 10px 0;
+
   font-size: 36px;
   font-weight: 600;
-  margin: 10px 0;
 }
 
 h1.section-title {
@@ -106,8 +113,8 @@ h1.section-title {
 
 .section-subtitle {
   font-size: 24px;
-  text-transform: uppercase;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .profile {
@@ -118,15 +125,6 @@ h1.section-title {
   width: 50%;
   height: auto;
   margin: -80px auto 0;
-}
-
-.two-columns-container {
-  display: flex;
-  gap: 20px;
-}
-
-.half-section {
-  width: 50%;
 }
 
 .contact-list {
@@ -163,13 +161,13 @@ h1.section-title {
 .skill-label {
   margin: 10px;
 
-  text-align: center;
-
   font-size: 18px;
+  text-align: center;
 }
 
 .skill-bar {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,32 +176,35 @@ h1.section-title {
 
 .skill-bar::before {
   content: "";
+
   position: absolute;
   z-index: -1;
 
   display: block;
-
   height: 2px;
   width: 100%;
 
-  background-color: var(--color-text-primary);
+  background-color: var(--color-primary);
 }
 
 .skill-bar-point {
   display: block;
   width: 25px;
   height: 25px;
+
   border-radius: 50%;
-  border: 2px solid var(--color-text-primary);
+  border: 2px solid var(--color-primary);
   background-color: var(--color-background);
 }
 
 .skill-bar-point-filled {
-  background-color: var(--color-1);
+  background-color: var(--color-secondary);
 }
 
 pre {
-  border: 1px solid var(--color-text-primary);
+  font-size: 14px;
+
+  border: 1px solid var(--color-primary);
 }
 
 details {
@@ -212,14 +213,23 @@ details {
 
 .experience-title {
   padding: 20px;
-  background: linear-gradient(160deg, rgba(42,34,32,1) 0%, rgba(156,134,102,1) 50%, rgba(114,116,113,1) 100%);
 
   font-size: 24px;
   font-weight: 600;
 
+  background: linear-gradient(160deg, rgba(42,34,32,1) 0%, rgba(156,134,102,1) 50%, rgba(114,116,113,1) 100%);
   outline: none;
 
   cursor: pointer;
+}
+
+.experience-title h3 {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 95%;
+
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .experience-content {
@@ -232,12 +242,11 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 50px;
   height: 50px;
-  border-radius: 50%;
 
-  background-color: var(--color-1);
+  border-radius: 50%;
+  background-color: var(--color-secondary);
 }
 
 .edu-icon img {
@@ -249,21 +258,14 @@ details {
   display: flex;
   align-items: center;
   gap: 30px;
-
   padding: 30px;
   margin-top: 30px;
 
-  border-top: 1px solid var(--color-text-primary);
+  color: var(--color-primary);
 
-  color: var(--color-text-primary);
+  border-top: 1px solid var(--color-primary);
 }
 
 .rs-link {
   margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .section {
-    width: 100%;
-  }
 }
